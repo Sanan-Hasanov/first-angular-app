@@ -9,6 +9,8 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
+import { IgxButtonModule, IgxRippleModule } from 'igniteui-angular';
+
 
 @NgModule({
   declarations: [
@@ -18,20 +20,23 @@ import { ToastrModule } from 'ngx-toastr';
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    BrowserAnimationsModule, // required animations module
+    BrowserAnimationsModule,
     NgxSpinnerModule,
+    IgxButtonModule,
+    IgxRippleModule,
     ToastrModule.forRoot({
       timeOut: 5000,
       progressBar: true,
       easing: "ease-in",
       closeButton: true,
-      progressAnimation: 'decreasing', 
+      progressAnimation: 'decreasing',
       preventDuplicates: true,
       positionClass: "toast-bottom-left"
-    }), // ToastrModule added
+    })
   ],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class AppModule {
+}
