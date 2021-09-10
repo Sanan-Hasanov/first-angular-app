@@ -1,26 +1,31 @@
 <div class="row">
-  <div class="col col-4">
+  <div class="col col-3">
     <div class="button-sample">
-      <button igxButton="raised" igxRipple>Raised</button>
+      <button igxButton="raised" igxRipple routerLink="home">Home</button>
     </div>
   </div>
-  <div class="col col-4">
+  <div class="col col-3">
     <div class="button-sample">
-      <button igxButton="raised" igxRipple>Raised</button>
+      <button igxButton="raised" igxRipple routerLink="role">Role</button>
     </div>
   </div>
-  <div class="col col-4">
+  <div class="col col-3">
     <div class="button-sample">
-      <button igxButton="raised" igxRipple>Raised</button>
+      <button igxButton="raised" igxRipple routerLink="user">User</button>
+    </div>
+  </div>
+  <div class="col col-3">
+    <div class="button-sample">
+      <button igxButton="raised" igxRipple [routerLink]="['user', 8]">Go 8.ID</button>
     </div>
   </div>
 </div>
 
 <router-outlet></router-outlet>
-<ngx-spinner
+<!-- <ngx-spinner
   bdColor="rgba(0, 0, 0, 1)"
   size="large"
   color="#fff"
   template="<img src='https://media.giphy.com/media/hL9q5k9dk9l0wGd4e0/giphy.gif' />"
 >
-</ngx-spinner>
+</ngx-spinner> -->
